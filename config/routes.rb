@@ -14,9 +14,10 @@ namespace :admin do
       post :publish
       post :hide
     end
-    resources :resumes
+  resources :resumes
   end
 end
+
 
   root 'jobs#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
