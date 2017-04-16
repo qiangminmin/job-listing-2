@@ -15,4 +15,7 @@ def hide!
 end
 
 has_many :resumes
+
+scope :published, -> { where(is_hidden: false) }
+scope :recent, -> { order('created_at DESC') }
 end
