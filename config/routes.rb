@@ -4,9 +4,6 @@ Rails.application.routes.draw do
   resources :jobs do
     resources :resumes
   end
-namespace :admin do
-  resources :jobs
-end
 
 namespace :admin do
   resources :jobs do
